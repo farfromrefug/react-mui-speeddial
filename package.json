@@ -4,12 +4,12 @@
   "description": "a speed dial component for Material UI",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jampy/react-mui-speeddial.git"
+    "url": "git+https://github.com/farfromrefug/react-mui-speeddial.git"
   },
   "bugs": {
-    "url": "https://github.com/jampy/react-mui-speeddial/issues"
+    "url": "https://github.com/farfromrefug/react-mui-speeddial/issues"
   },
-  "homepage": "https://github.com/jampy/react-mui-speeddial#readme",
+  "homepage": "https://github.com/farfromrefug/react-mui-speeddial#readme",
   "main": "./dist/index.js",
   "dependencies": {},
   "peerDependencies": {

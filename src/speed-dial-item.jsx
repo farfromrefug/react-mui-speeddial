@@ -78,7 +78,7 @@ export class SpeedDialItem extends React.PureComponent {
     style = { ...style, ...fx(visible, index) };
 
     return (<div style={style}>
-      <div style={Object.assign(styles.itemContainer, this.props.labelStyle)}>
+      <div style={...styles.itemContainer, ...this.props.labelStyle}>
         {this.props.label}
       </div>
 
@@ -89,8 +89,9 @@ export class SpeedDialItem extends React.PureComponent {
         style={this.props.style}
         iconStyle={this.props.iconStyle}
         onTouchTap={(ev) => { this.handleTouchTap(ev); }}
+        {...buttonProps}
       >
-        {this.props.fabContent}
+        {...this.props.buttonProps}
       </FloatingActionButton>
     </div>);
   }
