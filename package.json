@@ -1,6 +1,6 @@
 {
   "name": "material-ui-speeddial",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a speed dial component for Material UI",
   "repository": {
     "type": "git",
@@ -13,8 +13,7 @@
   "main": "./dist/index.js",
   "dependencies": {},
   "peerDependencies": {
-    "babel-polyfill": "^6.13.0",
-    "material-ui": "^0.16.1"
+    "material-ui": "^0.19.2"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
