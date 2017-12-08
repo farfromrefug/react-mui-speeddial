@@ -78,20 +78,20 @@ export class SpeedDialItem extends React.PureComponent {
     style = { ...style, ...fx(visible, index) };
 
     return (<div style={style}>
-      <div style={...styles.itemContainer, ...this.props.labelStyle}>
+      <div style={{...styles.itemContainer, ...this.props.labelStyle}}>
         {this.props.label}
       </div>
 
       <FloatingActionButton
-        mini={true}        
+        mini={true}
         secondary={this.props.secondary}
         backgroundColor={this.props.backgroundColor}
         style={this.props.style}
         iconStyle={this.props.iconStyle}
         onTouchTap={(ev) => { this.handleTouchTap(ev); }}
-        {...buttonProps}
-      >
         {...this.props.buttonProps}
+        >
+        {this.props.fabContent}
       </FloatingActionButton>
     </div>);
   }

@@ -2,3 +2,4 @@
 /scripts/
 .babelrc
 .npmignore
+node_modules/
