@@ -1,5 +1,5 @@
 import React from 'react'
-import FloatingActionButton from 'material-ui/FloatingActionButton';
+import Button from 'material-ui/Button';
 
 const styles = {
 
@@ -82,7 +82,7 @@ export class SpeedDialItem extends React.PureComponent {
         {this.props.label}
       </div>
 
-      <FloatingActionButton
+      <Button fab
         mini={true}
         secondary={this.props.secondary}
         backgroundColor={this.props.backgroundColor}
@@ -92,7 +92,7 @@ export class SpeedDialItem extends React.PureComponent {
         {...this.props.buttonProps}
         >
         {this.props.fabContent}
-      </FloatingActionButton>
+      </Button>
     </div>);
   }
 };
